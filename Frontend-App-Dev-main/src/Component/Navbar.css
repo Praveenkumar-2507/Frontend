@@ -1,0 +1,65 @@
+.navbar {
+  background-color: #e9eeee; /* Light background color for the navbar */
+  padding: 10px 20px; /* Padding around the navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  flex: 1;
+}
+
+.logo-img {
+  height: 50px; /* Adjust size as needed */
+}
+
+.navbar-links {
+  list-style-type: none; /* Remove bullet points from the list */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display items in a row */
+}
+
+.navbar-links li {
+  margin: 0 10px; /* Position relative for dropdown positioning */
+}
+
+.navbar-links a {
+  color: #110e0e; /* Dark text color */
+  text-decoration: none; /* Remove underline from links */
+  padding: 10px 15px; /* Padding around the links */
+  display: block; /* Make the link a block element for better click area */
+}
+
+.navbar-links a:hover {
+  background-color: #ffec5a; /* Change background on hover */
+}
+
+.dropdown-content {
+  display: none; /* Hide dropdown content by default */
+  position: absolute; /* Position it absolutely */
+  background-color: #f9f9f9; /* Light background for dropdown items */
+  min-width: 160px; /* Minimum width for dropdown */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow for dropdown */
+  z-index: 1; /* Ensure dropdown is above other content */
+}
+
+.dropdown-content a {
+  color: #333; /* Dark text color for dropdown links */
+  padding: 12px 16px; /* Padding around dropdown links */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Block display for easy clicking */
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd; /* Change background on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown content on hover */
+}
+
+.dropbtn {
+  cursor: pointer; /* Pointer cursor for dropdown button */
+}
